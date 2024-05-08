@@ -11,12 +11,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/ced37055f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- div qui va contenir l'ensemble du site. Cela servira à modifier les marges, padding  -->
     <div class="main-container">
-        <header>BLABLABLABLABALBAALKBGSG</header>
+
+        <!-- LOGO ET MENU -->
+        <header> 
+                <nav class="nav_menu">
+                    <a href="#hebergements" class="menu">Hébergements</a>
+                    <a href="#activites" class="menu">Activités</a>
+                </nav>
+                <img src="images/images/logo/Booki@3x.png" alt="Logo Booki" id="logo">
+        </header>
+
+        <!-- SECTION RECHERCHER -->
+        <section class="rechercher">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+            <form action="/search" method="get" class="search-form">
+                <img src="/images/images/Vector.svg" alt="Icône de recherche" id="marker">
+                <input type="text" name="location" placeholder="Marseille, France" id="rectangle_Marseille">
+                <button type="submit" id="search-button">Rechercher</button>
+            </form>
+        </section>
+
+        <!-- FILTRES -->
+        <section class="filtres">
+            <h3>Filtres</H3> 
+            <div> 
+                <button class="filter-button"><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
+                <button class="filter-button"><i class="fa-solid fa-person"></i> Familial</button>
+                <button class="filter-button"><i class="fa-solid fa-heart"></i> Romantique</button>
+                <button class="filter-button"><i class="fa-solid fa-fire"></i> Nos pépites</button>
+            </div>
+        </section>
+
+        <!-- INFOS -->
+        <div class="info">
+            <i class="fa-solid fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville </p>
+        </div>
+
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
@@ -30,7 +69,7 @@
                     <div class="populaires-cards">
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -49,7 +88,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
@@ -68,7 +107,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Bleu et Blanc</h3>
@@ -89,6 +128,7 @@
                 </section>
             </div>
         </main>
+
         <footer></footer>
     </div>
 </body>
