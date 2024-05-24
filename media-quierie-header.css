@@ -1,0 +1,58 @@
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .main-container {
+        padding: 0;
+    }
+     
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_menu {
+        justify-content: center;
+        width: 100%;
+        gap: 0;
+    }
+
+    .menu {
+        width: 50%;
+        text-align: center;
+    }
+
+    .nav_menu .menu:first-of-type {
+        border-bottom: 2px solid #0065FC; 
+        padding-bottom: 10px;
+    }
+
+    .menu:hover {
+        border-top: none;
+        margin-top: 0; 
+        color: inherit;
+    }
+
+
+    #search-button {
+        display: none;
+        
+    }
+
+    .search-icon {
+        display: block;
+        padding: 15px 16px 15px 16px;
+        border-radius: 15px;        
+        background-color: var(--main-color);
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    .search-icon .fa-solid {
+        color: white;
+    }
+
+    #rectangle_Marseille {
+        width: 90%; 
+    }
+
+}
