@@ -24,18 +24,20 @@ header {
 }
 
 /* SECTION RECHERCHER */
-.rechercher {
-    margin-top: 50px;
+.rechercher h1{
+    margin: 0px;
     
 }
 
 .rechercher p{
-    margin-top: -12px;
+    margin-top: 8px;
+    margin-bottom: 0px;
     
 }
 
 .search-form {
     display: flex;
+    padding-top: 35px;
 }
 
 #marker {
@@ -71,41 +73,73 @@ header {
 
 /* FILTRES */
 .filtres {
+    padding-top: 35px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+}
+
+.filtres h3{
+    margin: 0px;
+}
+
+
+.filtres div {
+    gap: 15px;
+    display: flex;
 }
 
 .fa-info {
    font-size: 10px;
+   
 }
 
 .filter-button {
+    height: 50px;
     cursor: pointer;
-    margin-right: 10px;
-    border-radius: 50px; 
-    padding: 10px;
-    border: 1.5px solid var(--border-color);
+    border-radius: 25px; 
+    padding: 4px 19px 4px 19px;
+    border: 2px solid var(--border-color);
+    background-color: white;
+    align-items: center;
+    display: flex;
+
 }
 
 .filter-button:hover {
     color: var(--main-color);
 }
 
-.filtres i{
-    padding-right: 5px;
+.filtres .fa-solid{
+    padding-right: 8px;
+    font-size: 20px;
+
+}
+
+.filtre-texte {
+    font-size: 17px;
+    font-weight:bold;
 }
 
 /* INFOS */
 .info {
+    padding-top: 35px;
     display: flex;
     align-items:center;
     gap: 15px;
+    padding-bottom: 35px;
+}
+
+.info p{
+    margin: 0px;
 }
 
 .info .fa-solid {
-    width: 20px;
-    height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,9 +154,7 @@ header {
 
 .Activités-cards {
    display: flex;
-   flex-direction: row;
-   gap: 0px;
-   justify-content: space-between;
+   gap: 30px;
 } 
 
 .Activités-cards img{
@@ -140,6 +172,7 @@ header {
 /* FOOTER  */
 
 .footer {  
+    padding-top: 35px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -150,7 +183,7 @@ header {
     flex-direction: column; 
     gap: 15px;
     width: 500px;
-    padding: 25px;
+    padding: 20px;
 }  
 
 .à-propos {  
@@ -196,13 +229,12 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
-    padding-top: 38px;
+    padding-top: 0px;
 }
 
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -275,6 +307,13 @@ a {
     justify-content: start;
 }
 
+.Afficher-plus h3{
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+
 .card-txt:hover {  
     color: var(--main-color);   
 }  
@@ -282,7 +321,7 @@ a {
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 31%;
 }
 
 .populaires-title {
@@ -345,7 +384,6 @@ a {
     .populaires {
         order: 1;
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
